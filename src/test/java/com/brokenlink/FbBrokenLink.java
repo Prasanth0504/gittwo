@@ -23,6 +23,7 @@ public class FbBrokenLink {
 		
 		List<WebElement> link = driver.findElements(By.tagName("a"));
 		int brokencounts=0;
+		System.out.println(link.size());
 		for (int i = 0; i <link.size(); i++) {
 			
 			String attribute = link.get(i).getAttribute("href");
